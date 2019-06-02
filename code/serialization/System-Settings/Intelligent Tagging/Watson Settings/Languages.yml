@@ -1,0 +1,14 @@
+﻿---
+ID: "ccda4dbb-fd22-4b10-a846-5b135b3ea6f1"
+Parent: "80650cd3-d757-41ee-be6a-b216c8bb60b0"
+Template: "0cc83dcb-ec2e-4f2a-b582-58cb29e027c8"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Watson Settings/Languages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180405T015413Z

@@ -1,0 +1,21 @@
+﻿---
+ID: "fbc3a41f-2c7f-4556-9734-bf50b202a1fc"
+Parent: "81f61da8-15a9-422d-a76b-e030b20c8b2d"
+Template: "81f61da8-15a9-422d-a76b-e030b20c8b2d"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Base Classifier/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c4fe73a-5285-4485-ab9f-871ade6f40ca"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181022T184305Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

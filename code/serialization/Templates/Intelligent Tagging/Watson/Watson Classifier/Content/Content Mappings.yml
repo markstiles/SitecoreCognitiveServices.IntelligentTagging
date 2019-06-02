@@ -1,0 +1,24 @@
+﻿---
+ID: "392c3213-a0d8-4300-a23a-14d39d669286"
+Parent: "16c8766f-9ed4-4d05-ad8d-11456a2805ef"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Watson/Watson Classifier/Content/Content Mappings
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Content Mappings
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Treelist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180405T024105Z

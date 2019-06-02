@@ -1,0 +1,18 @@
+﻿---
+ID: "338e4377-1e05-4a1c-ae74-cb9005125b0f"
+Parent: "08a2aa2f-ce66-497a-9028-d59c4005e262"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Rules/Taxonomy Rules Base/Taxonomy Rules
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180919T192128Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

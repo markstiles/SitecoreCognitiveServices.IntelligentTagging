@@ -1,0 +1,86 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentTagging.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentTagging.Areas.SitecoreCognitiveServices.Models.ViewModels.TagContentViewModel
+
+@{
+    ViewBag.Title = Translator.Text("TagContent.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentTagging.css?x=@(new System.Random().Next())" />
+
+<div class="frame tag-frame">
+    @if (Model != null)
+    {
+        <form class="form tag-form" method="post" action="/SitecoreCognitiveServices/IntelligentTagging/TagContentPost">
+            <div class="form-scrollable">
+                <fieldset>
+                    <div class="form-row">
+                        @Translator.Text("TagContent.Description")
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="result-failure">
+                        @Html.Raw(Translator.Text("TagContent.FailureMessage"))
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>@Translator.Text("TagContent.ContentLabel")</legend>
+                    <div class="form-row">
+                        <div>
+                            <textarea id="page-content" name="page-content">@Model.Content</textarea>
+                            <div class="character-count"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>@Translator.Text("TagContent.ClassifiersLabel")</legend>
+                    <div class="classifier-field">
+                        @for (int i = 0; i < Model.Classifiers.Count; i++)
+                        {
+                            var attr = (i == 0) ? "checked=checked" : "";
+                            <div>
+                                <input type="radio" id="classifierOption-@i" name="classifierOption" value="@Model.Classifiers[i].Value" @attr />
+                                <label for="classifierOption-@i">@Model.Classifiers[i].Text</label>
+                            </div>
+                        }
+                    </div>
+                    <div>
+                        @Html.Partial("_ContextFields")
+                    </div>
+                </fieldset>
+            </div>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("TagContent.ButtonText")</button>
+            </div>
+        </form>
+        <form class="form tag-item-form" method="post" action="/SitecoreCognitiveServices/IntelligentTagging/SaveTagsToItem">
+            <fieldset>
+                <div class="result-failure">
+                    @Html.Raw(Translator.Text("TagContent.ItemTagFailureMessage"))
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>@Translator.Text("TagContent.ItemTagsLabel")</legend>
+                <div class="result-message">@Translator.Text("TagContent.TagItemDescription")</div>
+                <div class="result-list"></div>
+            </fieldset>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("TagContent.TagItemButtonText")</button>
+            </div>
+        </form>
+        <div class="result-success">
+            @Translator.Text("TagContent.SuccessMessage")
+            <span class="tags"></span>
+        </div>
+        @Html.Partial("_ProgressIndicator")
+    }
+    else
+    {
+        <div class="no-model">
+            @Translator.Text("TagContent.TypeNotLearnedMessage")
+        </div>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.Shared.js"></script>
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.TagContent.js"></script>

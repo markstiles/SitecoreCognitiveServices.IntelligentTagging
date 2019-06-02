@@ -1,0 +1,20 @@
+﻿---
+ID: "8901e66e-944f-42aa-8a5b-642d28d0693b"
+Parent: "ccda4dbb-fd22-4b10-a846-5b135b3ea6f1"
+Template: "9dd0c8b6-fbcd-4e61-b500-eb1fe2914ee7"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Watson Settings/Languages/Brazilian Portuguese
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180405T015605Z
+    - ID: "999dfcc7-a0fa-4de2-852f-f1ece1983e58"
+      Hint: Value
+      Value: pt
+    - ID: "d36f919e-ffda-4a3d-b389-3cfb820fcbad"
+      Hint: Name
+      Value: Brazilian Portuguese

@@ -1,0 +1,14 @@
+﻿---
+ID: "72870740-cdc7-4ba7-b4fb-37d1e40ff5e2"
+Parent: "c698ff50-3150-4080-bb5b-9003f4729a21"
+Template: "8dbbd265-de70-41ca-8e02-aa12d8df0ec9"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Content Mappings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180301T004031Z

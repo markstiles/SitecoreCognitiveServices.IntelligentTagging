@@ -1,0 +1,18 @@
+﻿---
+ID: "59a9d640-0f51-433e-a1fc-0221ed8fe7fa"
+Parent: "b9852bdb-06ba-4194-ad0f-18a6c9b456c9"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Watson/Content Mapping/Page Content Mapping
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180301T003617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,22 @@
+﻿---
+ID: "c698ff50-3150-4080-bb5b-9003f4729a21"
+Parent: "00e3de41-11a3-4295-9767-9dd3dc832c02"
+Template: "61201ced-5a29-4674-a48c-3eae9d7ccc87"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180228T141626Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

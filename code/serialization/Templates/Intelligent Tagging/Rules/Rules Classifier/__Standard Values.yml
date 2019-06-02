@@ -1,0 +1,24 @@
+﻿---
+ID: "dacafd4e-e426-4b4b-8229-057d19b6509f"
+Parent: "5a495311-fc1f-4518-8a80-c3acdd33ac48"
+Template: "5a495311-fc1f-4518-8a80-c3acdd33ac48"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Rules/Rules Classifier/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181022T182904Z
+    - ID: "3894a5de-9340-45a8-8ee6-f9eb8e9a544c"
+      Hint: Assembly
+      Value: SitecoreCognitiveServices.Feature.IntelligentTagging
+    - ID: "4ff22a05-1dda-4783-83b3-371d2b053ff9"
+      Hint: Class Path
+      Value: SitecoreCognitiveServices.Feature.IntelligentTagging.Classifiers.RulesClassifier
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

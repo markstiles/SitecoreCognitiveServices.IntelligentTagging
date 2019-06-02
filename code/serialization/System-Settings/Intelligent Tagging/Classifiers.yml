@@ -1,0 +1,18 @@
+﻿---
+ID: "3a425b96-0d37-427a-a425-fa30eb444c43"
+Parent: "c698ff50-3150-4080-bb5b-9003f4729a21"
+Template: "2bcab8b7-7ca2-4a1e-ba53-a7d3564b0fe0"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Classifiers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180404T022154Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

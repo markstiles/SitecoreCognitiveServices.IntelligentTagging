@@ -1,0 +1,24 @@
+﻿---
+ID: "1c394acd-3ae6-4fcc-9174-1cfd7561d202"
+Parent: "93a07ee1-e2d9-4659-b320-5e4eba2b37f5"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Watson/Watson Classifier/System Fields/Created
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: 
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Datetime
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180404T021350Z

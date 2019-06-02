@@ -1,0 +1,26 @@
+﻿---
+ID: "c9b432db-4039-41e1-9264-53015fb2bf27"
+Parent: "cbec3eed-a543-45a5-8459-dcaa8911b52d"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: /sitecore/system/Settings/Rules/Intelligent Tagging/Tags/Default
+DB: master
+BranchID: "bdc41fdd-a3ac-4b69-a0ba-471c425cb083"
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Type: Multilist
+  Value: |
+    {83E58187-D1E5-4FB8-953E-EE89816EC0B5}
+    {09340671-13CF-4181-A706-BE150B00D735}
+    {D8933FCB-48F3-468E-8FB6-8F2B5CFAF404}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{38069D83-16E5-4533-998A-E9E9E13B508D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180919T192211Z

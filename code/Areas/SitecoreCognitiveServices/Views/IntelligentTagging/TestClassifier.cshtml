@@ -1,0 +1,56 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentTagging.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentTagging.Areas.SitecoreCognitiveServices.Models.ViewModels.TestClassifierViewModel
+
+@{
+    ViewBag.Title = Translator.Text("TestClassifier.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentTagging.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+    <form class="form test-classifier-form" method="post" action="/SitecoreCognitiveServices/IntelligentTagging/TestClassifierPost">
+        <fieldset>
+            <div class="form-row">
+                @Translator.Text("TestClassifier.Description")
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="result-success">
+                @{
+                    Translator.Text("TestClassifier.SuccessMessage")
+                        .Replace("{0}", "<span class=\"result-accuracy\"></span>")
+                        .Replace("{1}", "<span class=\"result-overage\"></span>")
+                        .Replace("{2}", "<span class=\"result-confidence\"></span>");
+                }
+            </div>
+            <div class="result-failure">
+                @Html.Raw(Translator.Text("TestClassifier.FailureMessage"))
+                <div class="message"></div>
+            </div>
+            <div class="result-status">
+                @if (Model.Failed)
+                {
+                    @Model.Message
+                }
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                @Html.Partial("_ContextFields")
+            </div>
+        </fieldset>
+        <div class="scWizardButtons">
+            @if (!Model.Failed) { 
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("TestClassifier.ButtonText")</button>
+            }
+        </div>
+    </form>
+    @Html.Partial("_ProgressIndicator")
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.Shared.js"></script>
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.TestClassifier.js"></script>

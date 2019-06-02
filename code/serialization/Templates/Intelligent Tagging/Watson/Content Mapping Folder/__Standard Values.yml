@@ -1,0 +1,23 @@
+﻿---
+ID: "1c6d51f8-7582-4e7f-a5f8-f98ad1d0023b"
+Parent: "8dbbd265-de70-41ca-8e02-aa12d8df0ec9"
+Template: "8dbbd265-de70-41ca-8e02-aa12d8df0ec9"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Tagging/Watson/Content Mapping Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{B9852BDB-06BA-4194-AD0F-18A6C9B456C9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180301T003641Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

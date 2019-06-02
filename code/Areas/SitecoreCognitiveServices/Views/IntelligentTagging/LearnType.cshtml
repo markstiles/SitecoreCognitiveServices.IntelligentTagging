@@ -1,0 +1,56 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentTagging.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentTagging.Areas.SitecoreCognitiveServices.Models.ViewModels.LearnTypeViewModel
+
+@{
+    ViewBag.Title = Translator.Text("LearnType.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentTagging.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+        <form class="form learn-form" method="post" action="/SitecoreCognitiveServices/IntelligentTagging/LearnTypePost">
+            <div class="form-scrollable">
+                <fieldset>
+                    <div class="form-row">
+                        @Translator.Text("LearnType.Description")
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="result-success">
+                        @Translator.Text("LearnType.SuccessMessage")
+                    </div>
+                    <div class="result-failure"></div>
+                </fieldset>
+                <fieldset class="form-set">
+                    <legend>@Translator.Text("LearnType.ContentFieldsLabel")</legend>
+                    <div class="form-row">
+                        <div class="form-option-list">
+                            @foreach (var f in Model.Fields)
+                            {
+                                <div>
+                                    <input type="checkbox" id="contentOption-@f" name="contentOption" value="@f"/>
+                                    <label for="contentOption-@f">@f</label>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        @Html.Partial("_ContextFields")
+                    </div>
+                </fieldset>
+            </div>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("LearnType.ButtonText")</button>
+            </div>
+        </form>
+        @Html.Partial("_ProgressIndicator")
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.Shared.js"></script>
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentTagging.LearnType.js"></script>

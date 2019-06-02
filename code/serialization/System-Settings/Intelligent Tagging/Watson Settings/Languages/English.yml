@@ -1,0 +1,24 @@
+﻿---
+ID: "f8b3a426-0d9f-4326-9190-0e45b2f11083"
+Parent: "ccda4dbb-fd22-4b10-a846-5b135b3ea6f1"
+Template: "9dd0c8b6-fbcd-4e61-b500-eb1fe2914ee7"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Tagging/Watson Settings/Languages/English
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180405T015422Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "999dfcc7-a0fa-4de2-852f-f1ece1983e58"
+      Hint: Value
+      Value: en
+    - ID: "d36f919e-ffda-4a3d-b389-3cfb820fcbad"
+      Hint: Name
+      Value: English
